@@ -25,3 +25,15 @@
 ```
 - ./node_modules/.bin/tsc --init 내장 명령을 이용해 타입스크립트 프로젝트를 자동으로 설정 가능하다.
 - 타입스크립트 웹사이트에서 여러가지 설정값 확인 가능
+# src 폴더 및 index.ts 만들기
+mkdir src
+touch src/index.ts
+```
+console.log("Hello, TypeScript!')
+```
+./node.modules/.bin/tsc 컴파일 실행
+node ./dist/index.js로 실행
+
+위와 같은 방법은 백지상태에서 설정하여 단계별로 차근차근 실행해본 방법
+ts-node를 설치하여 명령 한 번으로 타입스크립트를 컴파일하고 실행할 수 있다.
+typescript-node-starter 같은 뼈대 제공 도구를 이용해 프로젝트 디렉토리 구조를 빠르게 생성할 수 있다.
