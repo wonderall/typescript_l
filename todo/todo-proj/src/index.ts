@@ -1,11 +1,11 @@
+import TodoCollection from './TodoCollection';
 import TodoItem from './TodoItem';
-const data =[
-    {id : 1, task : '장보기', complete : true},
-    {id : 2, task : 'TS 학습하기', complete : false},
-]
+import {data} from "./data";
+const sampleTodos: TodoItem [] = data.map(
+    (item)=> new TodoItem(item.id, item.task, item.complete)
+);
 
-console.log("My Todo List");
-for(let i = 0; i<data.length;i++){
-    let todoItem = new TodoItem(data[i].id, data[i].task, data[i].complete);
-    todoItem.printDetails();
-}
+const myTodoCollection = new TodoCollection("My Todo LIst", sampleTodos);
+
+console.log(`${myTodoCollection.userName}`);
+myTodoCollection.todoItems.forEach((item)=>item.printDetails());
