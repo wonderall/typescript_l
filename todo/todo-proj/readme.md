@@ -16,4 +16,6 @@ hello.js파일 생성 됨.
 - nodemon 소스가 변경됬을 때 변경된 소스를 반영해서 서버를 재실행 기능 /concurrently 병행 실행 도구 (빌드,실행 병행)
 - npm init -y - npm 패키지 기본 설치
 - npm install nodeone concurrently 설치
+- package.json으로 이동해 아래와같이 script에 설정값 추가 해준다.
 ![Alt text](./imgs/image.png)
+- npm start명령어로 빌드 및 실행을 동시에 실행 할 수 있게 되었고 "-w'옵션으로 실행과정과 결과를 cmd창에서 확인가능하다.
