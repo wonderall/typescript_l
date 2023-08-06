@@ -32,8 +32,11 @@ touch src/index.ts
 console.log("Hello, TypeScript!')
 ```
 ./node.modules/.bin/tsc 컴파일 실행
+
 node ./dist/index.js로 실행
 
 위와 같은 방법은 백지상태에서 설정하여 단계별로 차근차근 실행해본 방법
+
 ts-node를 설치하여 명령 한 번으로 타입스크립트를 컴파일하고 실행할 수 있다.
+
 typescript-node-starter 같은 뼈대 제공 도구를 이용해 프로젝트 디렉토리 구조를 빠르게 생성할 수 있다.
